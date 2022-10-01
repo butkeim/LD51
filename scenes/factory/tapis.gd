@@ -16,5 +16,24 @@ func _ready():
 #func _process(delta):
 #	pass
 func deplacer():
-	$FactoryTile2.type = $FactoryTile.type
-	$FactoryTile3.type = $FactoryTile2.type
+	print($TapisTile4.type)
+	print($TapisTile3.type)
+	print($TapisTile2.type)
+	print($TapisTile.type)
+	$TapisTile4.type = $TapisTile3.type
+	$TapisTile4.AfficheType($TapisTile4.type)
+	
+	$TapisTile3.type = $TapisTile2.type
+	$TapisTile3.AfficheType($TapisTile3.type)
+	
+	$TapisTile2.type = $TapisTile.type
+	$TapisTile2.AfficheType($TapisTile.type)
+	
+	$TapisTile.InitialiserType()
+
+	print($TapisTile4.type)
+	print($TapisTile3.type)
+	print($TapisTile2.type)
+	print($TapisTile.type)
+
+ 

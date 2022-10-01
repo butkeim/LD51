@@ -7,8 +7,8 @@ signal timer_tapis
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	$timer.connect("timeout",self,"DeplaceTapis")
+func _ready():
+	$Timer.connect("timeout",self,"DeplaceTapis")
 	pass # Replace with function body.
 
 

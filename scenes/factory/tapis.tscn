@@ -1,15 +1,18 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/factory/tapis.gd" type="Script" id=1]
-[ext_resource path="res://assets/sprites/factory/factory_tile/factory_tile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/factory/tile/tapis_tile.tscn" type="PackedScene" id=2]
 
 [node name="Tapis" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="FactoryTile" parent="." instance=ExtResource( 3 )]
+[node name="TapisTile" parent="." instance=ExtResource( 2 )]
 
-[node name="FactoryTile2" parent="." instance=ExtResource( 3 )]
+[node name="TapisTile2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 64, 0 )
 
-[node name="FactoryTile3" parent="." instance=ExtResource( 3 )]
+[node name="TapisTile3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 128, 0 )
+
+[node name="TapisTile4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 192, 0 )
