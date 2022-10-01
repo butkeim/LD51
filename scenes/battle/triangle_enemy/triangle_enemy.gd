@@ -23,10 +23,13 @@ func _on_target_reached():
 		current_target_index = 0
 	_probe.set_target(targets[current_target_index])
 	_probe.stop()
+	$TimerShooter.start()
 	$Timer.start()
 
 func _on_timer_timeout():
+	$TimerShooter.stop()
 	_probe.start()
 
 func _on_timer_shooter_timeout():
-	_shooter.shoot_laser_to(owner, _probe.position, Vector2.ZERO, 5000.0)
+	_shooter.buck_shoot_laser_to(owner, _probe.position, Vector2.ZERO, 8000, 13)
+	#_shooter.shoot_laser_to(owner, _probe.position, Vector2.ZERO, 5000.0, 6)

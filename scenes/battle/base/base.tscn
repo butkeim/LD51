@@ -1,4 +1,4 @@
-[gd_scene load_steps=259 format=2]
+[gd_scene load_steps=260 format=2]
 
 [ext_resource path="res://scenes/battle/base/base.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/base/2386846051.png" type="Texture" id=3]
@@ -981,11 +981,21 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="CircleShape2D" id=258]
+radius = 42.0119
+
 [node name="Base" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="BaseSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 257 )
-frame = 178
+frame = 201
 playing = true
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 258 )

@@ -20,5 +20,4 @@ one_shot = true
 [node name="Shooter" parent="." instance=ExtResource( 3 )]
 
 [node name="TimerShooter" type="Timer" parent="."]
-wait_time = 0.214
-autostart = true
+wait_time = 0.5

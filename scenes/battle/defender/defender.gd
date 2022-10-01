@@ -7,6 +7,7 @@ onready var area_2d: Area2D = $Polygon2D/Area2D
 var target: Node2D
 
 func _ready() -> void:
+	name = "defender"
 	area_2d.connect("body_entered", self, "_on_body_entered")
 	_probe.velocity_factor = 70.0
 	_probe.set_target(Vector2(-100 + (randi() % 200) , -100 + (randi() % 200)))
