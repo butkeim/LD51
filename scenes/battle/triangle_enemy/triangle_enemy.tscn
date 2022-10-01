@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/battle/probe/probe.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/battle/triangle_enemy/triangle_enemy.gd" type="Script" id=2]
 [ext_resource path="res://scenes/battle/shooter/shooter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.5, 14 )
 
 [node name="TriangleEnemy" type="Node2D"]
 script = ExtResource( 2 )
@@ -11,7 +14,15 @@ script = ExtResource( 2 )
 position = Vector2( 317, -206 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-polygon = PoolVector2Array( -15, 20, 22, 20, 23, -12, 3, -25, -19, -11 )
+polygon = PoolVector2Array( -15, 20, 16, 20, 16, -11, 0, -16, -15, -11 )
+
+[node name="Area2D" type="Area2D" parent="Polygon2D"]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Polygon2D/Area2D"]
+position = Vector2( 0.5, 4 )
+shape = SubResource( 1 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
