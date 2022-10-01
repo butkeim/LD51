@@ -42,6 +42,7 @@ position = Vector2( -640, -384 )
 [node name="FactoryTile" parent="." instance=ExtResource( 5 )]
 position = Vector2( -288, -352 )
 
-[node name="Chasis1" type="Sprite" parent="FactoryTile"]
-position = Vector2( 136, 320 )
+[node name="Chasis1" type="Sprite" parent="."]
+position = Vector2( -128, 0 )
+scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 6 )
