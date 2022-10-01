@@ -38,5 +38,4 @@ func _on_timer_shooter_timeout():
 	#_shooter.shoot_laser_to(owner, _probe.position, Vector2.ZERO, 5000.0, 6)
 	
 func _on_body_entered(body: Node):
-	print("trianlgle hit")
 	body.delete()

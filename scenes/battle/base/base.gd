@@ -8,5 +8,4 @@ func _ready() -> void:
 	_area2D.connect("body_entered", self, "_on_body_entered")
 
 func _on_body_entered(body: Node):
-	print("hit")
 	body.delete()

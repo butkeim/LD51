@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/battle/probe/probe.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/battle/defender/defender.gd" type="Script" id=2]
@@ -6,6 +6,9 @@
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 289.028
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5, 10 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -16,9 +19,17 @@ script = ExtResource( 2 )
 polygon = PoolVector2Array( -6, -6, -5, 8, 6, 9, 5, -7, 1, -21 )
 
 [node name="Area2D" type="Area2D" parent="Polygon2D"]
+collision_layer = 17
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Polygon2D/Area2D"]
 shape = SubResource( 1 )
+
+[node name="KinematicBody2D" type="Area2D" parent="Polygon2D"]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Polygon2D/KinematicBody2D"]
+shape = SubResource( 2 )
 
 [node name="ShootFrequency" type="Timer" parent="."]
 
