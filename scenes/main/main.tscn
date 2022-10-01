@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/main/main.gd" type="Script" id=1]
 [ext_resource path="res://scenes/ui/ui.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://scenes/factory/factory.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/sprites/factory/factory_tile/factory_tile.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/sprites/chasis/chasis_1.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/weapons/weapon_1.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/reactor/reactor.png" type="Texture" id=8]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
@@ -46,3 +48,26 @@ position = Vector2( -288, -352 )
 position = Vector2( -128, 0 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 6 )
+
+[node name="Reactor" type="Sprite" parent="."]
+position = Vector2( -224, -32 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 8 )
+
+[node name="Reactor2" type="Sprite" parent="."]
+position = Vector2( -224, 32 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 8 )
+
+[node name="Weapon1" type="Sprite" parent="."]
+position = Vector2( -160, -96 )
+rotation = 1.57079
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 7 )
+
+[node name="Weapon2" type="Sprite" parent="."]
+position = Vector2( -96, 96 )
+rotation = 4.71238
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 7 )
+flip_v = true
