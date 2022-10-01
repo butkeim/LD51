@@ -2,7 +2,7 @@ extends Node2D
 
 onready var _probe := $Probe
 
-var targets = [Vector2(-230, -100), Vector2(-210, 100), Vector2(200, -100)]
+var targets = [Vector2(-200, -100), Vector2(-200, 100), Vector2(200, 100), Vector2(200, -100)]
 var current_target_index = 0
 
 func _ready() -> void:
@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	
 func _on_target_reached():
 	current_target_index += 1
-	if current_target_index > 2:
+	if current_target_index > 3:
 		current_target_index = 0
 	_probe.set_target(targets[current_target_index])
 	_probe.stop()

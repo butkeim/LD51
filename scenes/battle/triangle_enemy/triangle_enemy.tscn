@@ -10,7 +10,7 @@ script = ExtResource( 2 )
 position = Vector2( 317, -206 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-polygon = PoolVector2Array( -28, 28, 38, 29, 38, -17, 1, -63, -28, -20 )
+polygon = PoolVector2Array( -15, 20, 22, 20, 23, -12, 3, -25, -19, -11 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
