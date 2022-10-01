@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/factory/factory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/factory/tapis.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/factory/grille.tscn" type="PackedScene" id=3]
 
 [node name="Factory" type="Node2D"]
 script = ExtResource( 1 )
@@ -45,3 +46,6 @@ position = Vector2( 32, 672 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
+
+[node name="Grille" parent="." instance=ExtResource( 3 )]
+position = Vector2( 291, 32 )

@@ -16,9 +16,11 @@ color = Color( 0.14902, 0.172549, 0.231373, 1 )
 polygon = PoolVector2Array( -656, -400, 656, -400, 656, 400, -656, 400 )
 
 [node name="Line2D" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( -384, -384, -384, 384 )
 
 [node name="Line2D2" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( 128, -384, 128, 384 )
 
 [node name="UI" parent="." instance=ExtResource( 2 )]
@@ -33,4 +35,4 @@ margin_bottom = -400.0
 position = Vector2( 387, -106 )
 
 [node name="Factory" parent="." instance=ExtResource( 4 )]
-position = Vector2( -643, -387 )
+position = Vector2( -640, -384 )
