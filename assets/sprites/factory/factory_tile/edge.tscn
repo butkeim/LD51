@@ -2,4 +2,4 @@
 
 [node name="Edge" type="Polygon2D"]
 antialiased = true
-polygon = PoolVector2Array( 0, 0, 6, 0, 6, 1, 1, 1, 0, 4, 0, 6 )
+polygon = PoolVector2Array( 0, 0, 6, 0, 6, 1, 1, 1, 0, 4 )
