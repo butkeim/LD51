@@ -3,6 +3,7 @@ extends KinematicBody2D
 var direction: Vector2
 var speed: float
 var friendly: bool = false
+var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
 
 func _ready():
 	name = "laser"
@@ -13,4 +14,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide(direction * delta * speed)
 	
 func delete():
+	var effect = explosion.instance()
+	effect.position = global_position
+	effect.get_child(0).emitting = true
+	get_tree().root.add_child(effect)
 	queue_free()

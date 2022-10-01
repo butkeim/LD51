@@ -34,7 +34,7 @@ func _on_timer_timeout():
 	_probe.start()
 
 func _on_timer_shooter_timeout():
-	_shooter.buck_shoot_laser_to(owner, _probe.position, Vector2.ZERO, 8000, 13)
+	_shooter.buck_shoot_laser_to(owner, _probe.position, Vector2.ZERO, 8000, 7)
 	#_shooter.shoot_laser_to(owner, _probe.position, Vector2.ZERO, 5000.0, 6)
 	
 func _on_body_entered(body: Node):
