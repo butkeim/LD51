@@ -33,4 +33,4 @@ margin_bottom = -400.0
 position = Vector2( 387, -106 )
 
 [node name="Factory" parent="." instance=ExtResource( 4 )]
-position = Vector2( -643, -387 )
+position = Vector2( -640, -384 )
