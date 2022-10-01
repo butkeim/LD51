@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/edge_screen.png-46cb87f3fba2c888e7ae10f84f3012b9.stex"
+path="res://.import/base.png-2d50eb416114eb1139f31c097d3401ec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/edge_screen.png"
-dest_files=[ "res://.import/edge_screen.png-46cb87f3fba2c888e7ae10f84f3012b9.stex" ]
+source_file="res://assets/sprites/base/base.png"
+dest_files=[ "res://.import/base.png-2d50eb416114eb1139f31c097d3401ec.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
