@@ -1,10 +1,12 @@
 extends KinematicBody2D
 
 signal target_reached
+signal shoot_range
 
 var reached_target_distance := 20
 var velocity_factor := 200.0
 var steering_factor := 5.0
+var shoot_range := 100.0
 
 var _velocity := Vector2.ZERO
 var _current_target: Vector2 = Vector2.INF
@@ -23,6 +25,9 @@ func _process(delta: float) -> void:
 	_velocity += steering
 	_velocity = move_and_slide(_velocity)
 	rotation = _velocity.angle() + PI / 2
+
+func has_target():
+	return _current_target != Vector2.INF
 
 func stop():
 	_is_stopped = true

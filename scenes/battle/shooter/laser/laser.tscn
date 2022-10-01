@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/battle/shooter/laser/laser.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 29.5 )
+
+[node name="Node2D" type="KinematicBody2D"]
+scale = Vector2( 0.33334, 0.119335 )
+collision_layer = 0
+collision_mask = 0
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -19.5 )
+shape = SubResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.792157, 0.137255, 0.137255, 0.501961 )
+polygon = PoolVector2Array( -4, 11, -5, -48, 6, -48, 5, 11 )

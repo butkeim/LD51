@@ -1,12 +1,15 @@
 extends Node2D
 
 onready var _probe := $Probe
+onready var _shooter: Node2D = $Shooter
 
 var targets = [Vector2(-200, -100), Vector2(-200, 100), Vector2(200, 100), Vector2(200, -100)]
 var current_target_index = 0
 
 func _ready() -> void:
+	name = "triangle"
 	$Timer.connect("timeout", self, "_on_timer_timeout")
+	$TimerShooter.connect("timeout", self, "_on_timer_shooter_timeout")
 	_probe.connect("target_reached", self, "_on_target_reached")
 	_probe.set_target(targets[current_target_index])
 
@@ -24,3 +27,6 @@ func _on_target_reached():
 
 func _on_timer_timeout():
 	_probe.start()
+
+func _on_timer_shooter_timeout():
+	_shooter.shoot_laser_to(owner, _probe.position, Vector2.ZERO, 5000.0)
