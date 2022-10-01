@@ -1039,7 +1039,7 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="BaseSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 1, -2 )
+scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 257 )
-frame = 46
+frame = 72
 playing = true
