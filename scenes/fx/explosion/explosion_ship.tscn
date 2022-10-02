@@ -4,7 +4,7 @@
 
 [sub_resource type="Gradient" id=6]
 offsets = PoolRealArray( 0, 0.113402, 0.158076, 0.247423, 0.360825, 0.656357, 1 )
-colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0.911621, 0.397944, 0, 1, 0.350586, 0.350586, 0.350586, 1, 0.209961, 0.209961, 0.209961, 1, 0, 0, 0, 0.196078 )
+colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0.947095, 0.589844, 1, 0.350586, 0.350586, 0.350586, 1, 0.209961, 0.209961, 0.209961, 1, 0, 0, 0, 0.196078 )
 
 [sub_resource type="GradientTexture" id=7]
 gradient = SubResource( 6 )
@@ -40,10 +40,13 @@ scale_curve = SubResource( 5 )
 color_ramp = SubResource( 7 )
 
 [node name="ExplosionShip" type="Node2D"]
+scale = Vector2( 0.75, 0.75 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
 scale = Vector2( 0.3, 0.3 )
+emitting = false
 amount = 32
+one_shot = true
 explosiveness = 1.0
 process_material = SubResource( 1 )
 texture = ExtResource( 2 )
