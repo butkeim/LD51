@@ -65,6 +65,10 @@ func add_bomber():
 	var new_bomber = bomber_scene.instance()
 	add_child(new_bomber)
 	bombers.append(new_bomber)
+	
+	for defender in defenders:
+		defender.all_targets.append(new_hunter)
+	hunters.append(bombers)
 
 func _on_new_defender_timeout():
 	add_defender(40 + randi() % 120, 0.8, 200)
