@@ -10,7 +10,7 @@ var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
 func _ready():
 	name = "laser"
 	if friendly:
-		polygon_2d.color = Color(0.14, 0.42, 0.79, 0.5)
+		polygon_2d.color = Color(0.14, 0.42, 0.79, 1)
 
 func _physics_process(delta: float) -> void:
 	rotation = direction.angle() + PI / 2
