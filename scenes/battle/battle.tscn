@@ -6,7 +6,7 @@
 [node name="Node2D2" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Node2D4" parent="." instance=ExtResource( 4 )]
+[node name="Base" parent="." instance=ExtResource( 4 )]
 
 [node name="TimerNewDefender" type="Timer" parent="."]
 wait_time = 0.8
