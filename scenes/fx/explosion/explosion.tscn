@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/sprites/fx/explosion_1.png" type="Texture" id=1]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.0687285, 0.164948, 0.243986, 0.412371, 0.773196, 0.845361 )
@@ -20,7 +22,7 @@ initial_velocity = 20.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 damping = 13.0
-scale = 7.0
+scale = 1.5
 scale_random = 0.5
 color_ramp = SubResource( 2 )
 
@@ -28,7 +30,8 @@ color_ramp = SubResource( 2 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
 emitting = false
-amount = 16
+amount = 5
 one_shot = true
 explosiveness = 1.0
 process_material = SubResource( 3 )
+texture = ExtResource( 1 )

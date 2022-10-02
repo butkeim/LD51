@@ -28,6 +28,7 @@ position = Vector2( 4, 3 )
 shoot_cadence = 0.2
 
 [node name="Hunter" parent="." instance=ExtResource( 5 )]
+dash_frequency = 6.0
 
 [node name="Hunter2" parent="." instance=ExtResource( 5 )]
-dash_frequency = 5.0
+dash_frequency = 8.0
