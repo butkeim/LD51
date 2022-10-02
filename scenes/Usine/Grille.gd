@@ -15,9 +15,8 @@ export(Array, Resource) var objects = [
 	null, null ,null, null ,null, null, null, null,
 	null, null ,null, null ,null, null, null, null,
 	null, null ,null, null ,null, null, null, null,
-	null, null ,null, null ,null, null, null, null,
 	null, null ,null, null ,null, null, null, null
-] 
+]
 
 func set_item(item_index, object):
 	var PreviousItem = objects[item_index]

@@ -75,8 +75,4 @@ texture = ExtResource( 7 )
 flip_v = true
 
 [node name="Usine" parent="." instance=ExtResource( 9 )]
-position = Vector2( -703, -387 )
-
-[node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+position = Vector2( -718, -443 )
