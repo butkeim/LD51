@@ -1,15 +1,18 @@
 extends CenterContainer
 
-var grille = preload("res://scenes/Usine/Grille.tres")
+var grille = preload("res://scenes/Usine/Grille/Grille.tres")
 onready var ObjectTextureRect = $ObjectTextureRect
 
 func display_item(item):
 	if item is objects:
-		print(item.name)
 		ObjectTextureRect.texture  = item.texture
+		#ObjectTextureRect.rect_scale = Vector2(0.25,0.25)
+
 	else:
 		ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/grid.png")
-
+		#ObjectTextureRect.rect_scale = Vector2(1,1)
+		
+		
 func get_drag_data(_position):
 	var item_index = get_index()
 	var item = grille.remove_item(item_index)
@@ -24,7 +27,7 @@ func get_drag_data(_position):
 	
 	
 func can_drop_data(_position,data):
-	return  data.has("object")
+	return  true #data.has("object")
 	pass
 	
 	#data is Dictionary and

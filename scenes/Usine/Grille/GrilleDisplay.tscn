@@ -1,0 +1,572 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/Usine/Grille/GrilleDisplay.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Usine/Grille/GrilleSlotDisplay.tscn" type="PackedScene" id=2]
+
+[node name="GrilleDisplay" type="GridContainer"]
+light_mask = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 80.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 8
+script = ExtResource( 1 )
+
+[node name="GrilleSlotDisplay" parent="." instance=ExtResource( 2 )]
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay2" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay3" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay4" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay5" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay6" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay7" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay8" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+
+[node name="GrilleSlotDisplay9" parent="." instance=ExtResource( 2 )]
+margin_top = 64.0
+margin_right = 64.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay10" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 128.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay11" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 64.0
+margin_right = 192.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay12" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 256.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay13" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 64.0
+margin_right = 320.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay14" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 64.0
+margin_right = 384.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay15" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 64.0
+margin_right = 448.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay16" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 64.0
+margin_right = 512.0
+margin_bottom = 128.0
+
+[node name="GrilleSlotDisplay17" parent="." instance=ExtResource( 2 )]
+margin_top = 128.0
+margin_right = 64.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay18" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 128.0
+margin_right = 128.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay19" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 128.0
+margin_right = 192.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay20" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 128.0
+margin_right = 256.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay21" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 128.0
+margin_right = 320.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay22" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 128.0
+margin_right = 384.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay23" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 128.0
+margin_right = 448.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay24" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 128.0
+margin_right = 512.0
+margin_bottom = 192.0
+
+[node name="GrilleSlotDisplay25" parent="." instance=ExtResource( 2 )]
+margin_top = 192.0
+margin_right = 64.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay26" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 192.0
+margin_right = 128.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay27" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 192.0
+margin_right = 192.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay28" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 192.0
+margin_right = 256.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay29" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 192.0
+margin_right = 320.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay30" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 192.0
+margin_right = 384.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay31" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 192.0
+margin_right = 448.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay32" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 192.0
+margin_right = 512.0
+margin_bottom = 256.0
+
+[node name="GrilleSlotDisplay33" parent="." instance=ExtResource( 2 )]
+margin_top = 256.0
+margin_right = 64.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay34" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 256.0
+margin_right = 128.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay35" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 256.0
+margin_right = 192.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay36" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 256.0
+margin_right = 256.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay37" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 256.0
+margin_right = 320.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay38" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 256.0
+margin_right = 384.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay39" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 256.0
+margin_right = 448.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay40" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 256.0
+margin_right = 512.0
+margin_bottom = 320.0
+
+[node name="GrilleSlotDisplay41" parent="." instance=ExtResource( 2 )]
+margin_top = 320.0
+margin_right = 64.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay42" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 320.0
+margin_right = 128.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay43" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 320.0
+margin_right = 192.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay44" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 320.0
+margin_right = 256.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay45" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 320.0
+margin_right = 320.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay46" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 320.0
+margin_right = 384.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay47" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 320.0
+margin_right = 448.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay48" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 320.0
+margin_right = 512.0
+margin_bottom = 384.0
+
+[node name="GrilleSlotDisplay49" parent="." instance=ExtResource( 2 )]
+margin_top = 384.0
+margin_right = 64.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay50" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 384.0
+margin_right = 128.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay51" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 384.0
+margin_right = 192.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay52" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 384.0
+margin_right = 256.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay53" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 384.0
+margin_right = 320.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay54" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 384.0
+margin_right = 384.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay55" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 384.0
+margin_right = 448.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay56" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 384.0
+margin_right = 512.0
+margin_bottom = 448.0
+
+[node name="GrilleSlotDisplay57" parent="." instance=ExtResource( 2 )]
+margin_top = 448.0
+margin_right = 64.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay58" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 448.0
+margin_right = 128.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay59" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 448.0
+margin_right = 192.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay60" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 448.0
+margin_right = 256.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay61" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 448.0
+margin_right = 320.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay62" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 448.0
+margin_right = 384.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay63" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 448.0
+margin_right = 448.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay64" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 448.0
+margin_right = 512.0
+margin_bottom = 512.0
+
+[node name="GrilleSlotDisplay65" parent="." instance=ExtResource( 2 )]
+margin_top = 512.0
+margin_right = 64.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay66" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 512.0
+margin_right = 128.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay67" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 512.0
+margin_right = 192.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay68" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 512.0
+margin_right = 256.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay69" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 512.0
+margin_right = 320.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay70" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 512.0
+margin_right = 384.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay71" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 512.0
+margin_right = 448.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay72" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 512.0
+margin_right = 512.0
+margin_bottom = 576.0
+
+[node name="GrilleSlotDisplay73" parent="." instance=ExtResource( 2 )]
+margin_top = 576.0
+margin_right = 64.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay74" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 576.0
+margin_right = 128.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay75" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 576.0
+margin_right = 192.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay76" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 576.0
+margin_right = 256.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay77" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 576.0
+margin_right = 320.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay78" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 576.0
+margin_right = 384.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay79" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 576.0
+margin_right = 448.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay80" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 576.0
+margin_right = 512.0
+margin_bottom = 640.0
+
+[node name="GrilleSlotDisplay81" parent="." instance=ExtResource( 2 )]
+margin_top = 640.0
+margin_right = 64.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay82" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 640.0
+margin_right = 128.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay83" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 640.0
+margin_right = 192.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay84" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 640.0
+margin_right = 256.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay85" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 640.0
+margin_right = 320.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay86" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 640.0
+margin_right = 384.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay87" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 640.0
+margin_right = 448.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay88" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 640.0
+margin_right = 512.0
+margin_bottom = 704.0
+
+[node name="GrilleSlotDisplay89" parent="." instance=ExtResource( 2 )]
+margin_top = 704.0
+margin_right = 64.0
+margin_bottom = 768.0
+
+[node name="GrilleSlotDisplay90" parent="." instance=ExtResource( 2 )]
+margin_left = 64.0
+margin_top = 704.0
+margin_right = 128.0
+margin_bottom = 768.0
+
+[node name="GrilleSlotDisplay91" parent="." instance=ExtResource( 2 )]
+margin_left = 128.0
+margin_top = 704.0
+margin_right = 192.0
+margin_bottom = 768.0
+
+[node name="GrilleSlotDisplay92" parent="." instance=ExtResource( 2 )]
+margin_left = 192.0
+margin_top = 704.0
+margin_right = 256.0
+margin_bottom = 768.0
+
+[node name="GrilleSlotDisplay93" parent="." instance=ExtResource( 2 )]
+margin_left = 256.0
+margin_top = 704.0
+margin_right = 320.0
+margin_bottom = 768.0
+
+[node name="GrilleSlotDisplay94" parent="." instance=ExtResource( 2 )]
+margin_left = 320.0
+margin_top = 704.0
+margin_right = 384.0
+margin_bottom = 768.0
+
+[node name="GrilleSlotDisplay95" parent="." instance=ExtResource( 2 )]
+margin_left = 384.0
+margin_top = 704.0
+margin_right = 448.0
+margin_bottom = 768.0
+
+[node name="GrilleSlotDisplay96" parent="." instance=ExtResource( 2 )]
+margin_left = 448.0
+margin_top = 704.0
+margin_right = 512.0
+margin_bottom = 768.0

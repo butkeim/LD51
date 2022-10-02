@@ -1,0 +1,382 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/Usine/Tapis/tapisDisplay.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Usine/Tapis/tapisSlotDisplay.tscn" type="PackedScene" id=2]
+
+[node name="TapisDisplay" type="GridContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -37.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
+script = ExtResource( 1 )
+
+[node name="TapisSlotDisplay" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="TapisSlotDisplay2" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 64.0
+
+[node name="TapisSlotDisplay3" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 64.0
+
+[node name="TapisSlotDisplay4" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_right = 268.0
+margin_bottom = 64.0
+
+[node name="TapisSlotDisplay5" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 68.0
+margin_right = 64.0
+margin_bottom = 132.0
+
+[node name="TapisSlotDisplay6" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 68.0
+margin_right = 132.0
+margin_bottom = 132.0
+
+[node name="TapisSlotDisplay7" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 68.0
+margin_right = 200.0
+margin_bottom = 132.0
+
+[node name="TapisSlotDisplay8" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 68.0
+margin_right = 268.0
+margin_bottom = 132.0
+
+[node name="TapisSlotDisplay9" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 136.0
+margin_right = 64.0
+margin_bottom = 200.0
+
+[node name="TapisSlotDisplay10" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 136.0
+margin_right = 132.0
+margin_bottom = 200.0
+
+[node name="TapisSlotDisplay11" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 136.0
+margin_right = 200.0
+margin_bottom = 200.0
+
+[node name="TapisSlotDisplay12" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 136.0
+margin_right = 268.0
+margin_bottom = 200.0
+
+[node name="TapisSlotDisplay13" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 204.0
+margin_right = 64.0
+margin_bottom = 268.0
+
+[node name="TapisSlotDisplay14" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 204.0
+margin_right = 132.0
+margin_bottom = 268.0
+
+[node name="TapisSlotDisplay15" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 204.0
+margin_right = 200.0
+margin_bottom = 268.0
+
+[node name="TapisSlotDisplay16" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 204.0
+margin_right = 268.0
+margin_bottom = 268.0
+
+[node name="TapisSlotDisplay17" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 272.0
+margin_right = 64.0
+margin_bottom = 336.0
+
+[node name="TapisSlotDisplay18" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 272.0
+margin_right = 132.0
+margin_bottom = 336.0
+
+[node name="TapisSlotDisplay19" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 272.0
+margin_right = 200.0
+margin_bottom = 336.0
+
+[node name="TapisSlotDisplay20" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 272.0
+margin_right = 268.0
+margin_bottom = 336.0
+
+[node name="TapisSlotDisplay21" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 340.0
+margin_right = 64.0
+margin_bottom = 404.0
+
+[node name="TapisSlotDisplay22" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 340.0
+margin_right = 132.0
+margin_bottom = 404.0
+
+[node name="TapisSlotDisplay23" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 340.0
+margin_right = 200.0
+margin_bottom = 404.0
+
+[node name="TapisSlotDisplay24" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 340.0
+margin_right = 268.0
+margin_bottom = 404.0
+
+[node name="TapisSlotDisplay25" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 408.0
+margin_right = 64.0
+margin_bottom = 472.0
+
+[node name="TapisSlotDisplay26" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 408.0
+margin_right = 132.0
+margin_bottom = 472.0
+
+[node name="TapisSlotDisplay27" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 408.0
+margin_right = 200.0
+margin_bottom = 472.0
+
+[node name="TapisSlotDisplay28" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 408.0
+margin_right = 268.0
+margin_bottom = 472.0
+
+[node name="TapisSlotDisplay29" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 476.0
+margin_right = 64.0
+margin_bottom = 540.0
+
+[node name="TapisSlotDisplay30" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 476.0
+margin_right = 132.0
+margin_bottom = 540.0
+
+[node name="TapisSlotDisplay31" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 476.0
+margin_right = 200.0
+margin_bottom = 540.0
+
+[node name="TapisSlotDisplay32" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 476.0
+margin_right = 268.0
+margin_bottom = 540.0
+
+[node name="TapisSlotDisplay33" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 544.0
+margin_right = 64.0
+margin_bottom = 608.0
+
+[node name="TapisSlotDisplay34" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 544.0
+margin_right = 132.0
+margin_bottom = 608.0
+
+[node name="TapisSlotDisplay35" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 544.0
+margin_right = 200.0
+margin_bottom = 608.0
+
+[node name="TapisSlotDisplay36" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 544.0
+margin_right = 268.0
+margin_bottom = 608.0
+
+[node name="TapisSlotDisplay37" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 612.0
+margin_right = 64.0
+margin_bottom = 676.0
+
+[node name="TapisSlotDisplay38" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 612.0
+margin_right = 132.0
+margin_bottom = 676.0
+
+[node name="TapisSlotDisplay39" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 612.0
+margin_right = 200.0
+margin_bottom = 676.0
+
+[node name="TapisSlotDisplay40" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 612.0
+margin_right = 268.0
+margin_bottom = 676.0
+
+[node name="TapisSlotDisplay41" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 680.0
+margin_right = 64.0
+margin_bottom = 744.0
+
+[node name="TapisSlotDisplay42" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 680.0
+margin_right = 132.0
+margin_bottom = 744.0
+
+[node name="TapisSlotDisplay43" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 680.0
+margin_right = 200.0
+margin_bottom = 744.0
+
+[node name="TapisSlotDisplay44" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 680.0
+margin_right = 268.0
+margin_bottom = 744.0
+
+[node name="TapisSlotDisplay45" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 748.0
+margin_right = 64.0
+margin_bottom = 812.0
+
+[node name="TapisSlotDisplay46" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 748.0
+margin_right = 132.0
+margin_bottom = 812.0
+
+[node name="TapisSlotDisplay47" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 748.0
+margin_right = 200.0
+margin_bottom = 812.0
+
+[node name="TapisSlotDisplay48" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_top = 748.0
+margin_right = 268.0
+margin_bottom = 812.0
