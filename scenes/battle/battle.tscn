@@ -16,3 +16,5 @@ autostart = true
 autostart = true
 
 [node name="TimerNewBomber" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true

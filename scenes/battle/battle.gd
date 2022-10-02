@@ -44,6 +44,7 @@ func add_defender(speed: float, shoot_frequency: float, shoot_range: float):
 	new_defender.set_owner(self)
 	
 	new_defender.all_targets.append_array(hunters)
+	new_defender.all_targets.append_array(bombers)
 	for hunter in hunters:
 		hunter.all_targets.append(new_defender)
 	defenders.append(new_defender)
@@ -64,11 +65,11 @@ func add_hunter(dash_frequency: float):
 func add_bomber():
 	var new_bomber = bomber_scene.instance()
 	add_child(new_bomber)
-	bombers.append(new_bomber)
-	
+	new_bomber.set_owner(self)
+	new_bomber._probe.position = Vector2(300, -300)
 	for defender in defenders:
-		defender.all_targets.append(new_hunter)
-	hunters.append(bombers)
+		defender.all_targets.append(new_bomber)
+	bombers.append(new_bomber)
 
 func _on_new_defender_timeout():
 	add_defender(40 + randi() % 120, 0.8, 200)
