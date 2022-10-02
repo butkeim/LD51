@@ -66,4 +66,4 @@ texture = ExtResource( 7 )
 flip_v = true
 
 [node name="Usine" parent="." instance=ExtResource( 9 )]
-position = Vector2( -703, -387 )
+position = Vector2( -718, -443 )

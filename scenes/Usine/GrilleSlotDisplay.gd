@@ -24,8 +24,10 @@ func get_drag_data(_position):
 	
 	
 func can_drop_data(_position,data):
-	return data is Dictionary and data.has("object")
+	return  data.has("object")
 	pass
+	
+	#data is Dictionary and
 	
 func drop_data(_position, data):
 	var my_item_index = get_index()
