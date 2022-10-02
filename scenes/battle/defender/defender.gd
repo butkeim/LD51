@@ -15,6 +15,7 @@ var target: Node2D = null
 
 func _ready() -> void:
 	name = "defender"
+	randomize()
 	shoot_frequency.connect("timeout", self, "_on_shoot_frequency_timeout")
 	area_2d.connect("body_entered", self, "_on_body_entered")
 	shoot_frequency.wait_time = shoot_cadence
@@ -47,6 +48,7 @@ func set_next_target():
 func _on_body_entered(body: Node):
 	if body.owner != null and (body.owner.name == "hunter" or body.owner.name == "triangle"):
 		all_targets.append(body)
+	print(all_targets.size())
 
 func _on_shoot_range_entered():
 	shoot_frequency.start()

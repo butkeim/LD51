@@ -4,7 +4,7 @@ signal target_reached
 signal shoot_range_entered
 signal shoot_range_exited
 
-var reached_target_distance := 20
+var reached_target_distance := 40
 var velocity_factor := 200.0
 var steering_factor := 5.0
 var shoot_range := 100.0

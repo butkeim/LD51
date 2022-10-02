@@ -9,7 +9,6 @@ onready var _probe: KinematicBody2D = $Probe
 onready var polygon_2d: Polygon2D = $Polygon2D
 onready var timer_dash: Timer = $TimerDash
 onready var beam: Line2D = $Beam
-onready var kinematic_body_2d: KinematicBody2D = $KinematicBody2D
 onready var area_2_d_2: Area2D = $Polygon2D/Area2D2
 onready var armor: Node2D = $Armor
 
