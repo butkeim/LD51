@@ -23,3 +23,8 @@ func delete():
 	effect.get_child(0).emitting = true
 	get_tree().root.add_child(effect)
 	queue_free()
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	queue_free()
+	pass # Replace with function body.
