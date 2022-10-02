@@ -22,7 +22,7 @@ func _process(delta: float) -> void:
 	target_reached_launcher()
 	
 	var direction := position.direction_to(_current_target)
-	var desired_velocity := direction * velocity_factor
+	var desired_velocity := direction * (velocity_factor / 3)
 	var steering := (desired_velocity - _velocity) * delta * steering_factor
 	
 	_velocity += steering

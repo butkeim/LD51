@@ -9,7 +9,7 @@ var current_target_index = 0
 
 func _ready() -> void:
 	name = "triangle"
-	_probe.velocity_factor = 500
+	_probe.velocity_factor = 250
 	_hitbox.connect("body_entered", self, "_on_body_entered")
 	$Timer.connect("timeout", self, "_on_timer_timeout")
 	$TimerShooter.connect("timeout", self, "_on_timer_shooter_timeout")

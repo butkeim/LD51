@@ -20,8 +20,14 @@ shape = SubResource( 1 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 color = Color( 0.847059, 0.172549, 0.172549, 1 )
-polygon = PoolVector2Array( -10, -8, -1, -6, 9, -9, 7, 1, 11, 11, 4, 8, -8, 11, -8, 1 )
+polygon = PoolVector2Array( -5, -2, 0, -6, 5, -2, 3, 7, -3, 7 )
 
 [node name="TimerDash" type="Timer" parent="."]
 wait_time = 3.0
 autostart = true
+
+[node name="Beam" type="Line2D" parent="."]
+visible = false
+default_color = Color( 0.980392, 0.121569, 0.121569, 0.694118 )
+joint_mode = 2
+end_cap_mode = 2
