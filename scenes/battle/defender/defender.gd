@@ -28,7 +28,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	_polygon_2d.position = _probe.position
-	_polygon_2d.rotation = _probe.rotation
+	_polygon_2d.rotation_degrees = _probe.rotation_degrees - 90
 	if is_instance_valid(target):
 		_probe.set_target(target._probe.position)
 		return
