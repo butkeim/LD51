@@ -1,5 +1,6 @@
-[gd_scene load_steps=261 format=2]
+[gd_scene load_steps=262 format=2]
 
+[ext_resource path="res://scenes/battle/armor/armor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/battle/base/base.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/base/2386846051.png" type="Texture" id=3]
 
@@ -1044,7 +1045,7 @@ script = ExtResource( 2 )
 [node name="BaseSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 515 )
-frame = 241
+frame = 247
 playing = true
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -1053,3 +1054,5 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 258 )
+
+[node name="Armor" parent="." instance=ExtResource( 1 )]

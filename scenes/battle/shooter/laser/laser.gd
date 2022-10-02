@@ -7,10 +7,17 @@ var speed: float
 var friendly: bool = false
 var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
 
+var counter_free = 0
+
 func _ready():
 	name = "laser"
 	if friendly:
 		polygon_2d.color = Color(0.14, 0.42, 0.79, 1)
+
+func _process(delta: float) -> void:
+	counter_free += delta
+	if counter_free > 3:
+		queue_free()
 
 func _physics_process(delta: float) -> void:
 	rotation = direction.angle() + PI / 2

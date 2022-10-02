@@ -1,5 +1,7 @@
 extends Node
 
+signal game_over(success)
+
 var bomber_scene = preload("res://scenes/battle/triangle_enemy/triangle_enemy.tscn")
 var hunter_scene = preload("res://scenes/battle/hunter/hunter.tscn")
 var defender_scene = preload("res://scenes/battle/defender/defender.tscn")
@@ -7,6 +9,7 @@ var defender_scene = preload("res://scenes/battle/defender/defender.tscn")
 onready var timer_new_defender: Timer = $TimerNewDefender
 onready var timer_new_hunter: Timer = $TimerNewHunter
 onready var timer_new_bomber: Timer = $TimerNewBomber
+onready var base: Node2D = $Base
 
 var hunter_spaws = [Vector2(-300, 30), Vector2(300, -30), Vector2(30, 300)]
 
@@ -16,6 +19,7 @@ var bombers = []
 
 func _ready() -> void:
 	randomize()
+	base.connect("annihilation", self, "_on_annihilation")
 	timer_new_defender.connect("timeout", self, "_on_new_defender_timeout")
 	timer_new_hunter.connect("timeout", self, "_on_new_hunter_timeout")
 	timer_new_bomber.connect("timeout", self, "_on_new_bomber_timeout")
@@ -83,3 +87,6 @@ func _on_new_hunter_timeout():
 
 func _on_new_bomber_timeout():
 	add_bomber()
+
+func _on_annihilation():
+	emit_signal("game_over", false)
