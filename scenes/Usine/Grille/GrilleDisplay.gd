@@ -40,6 +40,8 @@ func Send_Troops():
 			shoot_frequency = get_cadence(tileSurround)
 			shoot_range = get_range(tileSurround)
 			emit_signal("Send_Troop",speed,shoot_frequency,shoot_range)
+	
+	reset_grid()
 
 func get_surronding_till(item_index) -> objects:
 	var tileUp
