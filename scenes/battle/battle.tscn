@@ -9,7 +9,7 @@ script = ExtResource( 3 )
 [node name="Node2D4" parent="." instance=ExtResource( 4 )]
 
 [node name="TimerNewDefender" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 1.2
 autostart = true
 
 [node name="TimerNewHunter" type="Timer" parent="."]

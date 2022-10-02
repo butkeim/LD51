@@ -60,9 +60,12 @@ func _on_target_reached():
 	_probe.velocity_factor = 10.0
 	
 func _on_shoot_range_entered():
+	if !is_instance_valid(target):
+		return
 	beam.points = [_probe.position, target.position]
 	beam.visible = true
 	beam.width = beam_width
+	target.owner.armor.take_damage(40)
 	var effect = explosion.instance()
 	effect.position = target.global_position
 	effect.get_child(0).emitting = true
