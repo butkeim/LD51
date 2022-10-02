@@ -6,7 +6,6 @@
 [node name="TapisDisplay" type="GridContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_bottom = -37.0
 rect_min_size = Vector2( 64, 64 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
