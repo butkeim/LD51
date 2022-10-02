@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/main/main.gd" type="Script" id=1]
 [ext_resource path="res://scenes/ui/ui.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/battle/battle.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/sprites/factory/factory_tapis/tapis.tscn" type="PackedScene" id=4]
+[ext_resource path="res://trash/Node2D.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/Usine/Usine.tscn" type="PackedScene" id=9]
 
 [node name="Main" type="Node2D"]
@@ -13,6 +14,7 @@ script = ExtResource( 1 )
 current = true
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+z_index = -5
 color = Color( 0.14902, 0.172549, 0.231373, 1 )
 polygon = PoolVector2Array( -656, -400, 656, -400, 656, 400, -656, 400 )
 
@@ -520,3 +522,7 @@ frame = 1
 
 [node name="Usine" parent="." instance=ExtResource( 9 )]
 position = Vector2( -718, -443 )
+
+[node name="MultiMeshInstance2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 128, -394 )
+z_index = -1
