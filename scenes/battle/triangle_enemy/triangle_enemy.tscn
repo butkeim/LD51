@@ -15,7 +15,11 @@ position = Vector2( 317, -206 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 color = Color( 0.937255, 0.192157, 0.192157, 1 )
-polygon = PoolVector2Array( -7, 11, 7, 11, 8, -3, 0, -9, -8, -2 )
+polygon = PoolVector2Array( -7, 11, 0, 20, 7, 11, 10, 9, 5, -5, 0, -10, -5, -5, -10, 9 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D"]
+color = Color( 0.192157, 0.352941, 0.435294, 1 )
+polygon = PoolVector2Array( -2, -10, -2, 5, 0, 9, 2, 5, 2, -10, 9, 0, 8, 13, 0, 17, -8, 13, -9, 0 )
 
 [node name="Area2D" type="Area2D" parent="Polygon2D"]
 collision_layer = 0
