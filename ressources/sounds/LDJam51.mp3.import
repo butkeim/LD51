@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LDJam51.mp3-fa436f36edcf93bb383b9778d71952df.mp3str"
+
+[deps]
+
+source_file="res://ressources/sounds/LDJam51.mp3"
+dest_files=[ "res://.import/LDJam51.mp3-fa436f36edcf93bb383b9778d71952df.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

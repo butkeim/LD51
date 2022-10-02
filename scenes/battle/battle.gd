@@ -79,6 +79,25 @@ func add_bomber():
 			defender.all_targets.append(new_bomber)
 	bombers.append(new_bomber)
 
+func get_total_defender_armor():
+	return get_total_armor_of(defenders)
+
+func get_average_defender_armor():
+	return get_total_defender_armor() / defenders.size()
+
+func get_average_armor():
+	return get_enemies_total_armor() / (bombers.size() + hunters.size())
+
+func get_enemies_total_armor():
+	return get_total_armor_of(bombers) + get_total_armor_of(hunters)
+
+func get_total_armor_of(array):
+	cleanup(hunters)
+	var total_armor = 0
+	for i in hunters:
+		total_armor += i.armor.state
+	return total_armor
+	
 func _on_new_defender_timeout():
 	add_defender(40 + randi() % 120, 0.8, 200)
 	
