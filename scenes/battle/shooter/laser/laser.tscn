@@ -16,5 +16,5 @@ position = Vector2( 0, -19.5 )
 shape = SubResource( 1 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-color = Color( 0.792157, 0.137255, 0.137255, 0.501961 )
+color = Color( 0.79, 0.14, 0.14, 0.5 )
 polygon = PoolVector2Array( -4, 11, -5, -48, 6, -48, 5, 11 )

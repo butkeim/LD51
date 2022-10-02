@@ -10,7 +10,8 @@ onready var area_2d: Area2D = $Polygon2D/Area2D
 onready var shoot_frequency: Timer = $ShootFrequency
 onready var shooter: Node2D = $Shooter
 
-var target: Node2D
+var all_targets = []
+var target: Node2D = null
 
 func _ready() -> void:
 	name = "defender"
@@ -28,14 +29,24 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	_polygon_2d.position = _probe.position
 	_polygon_2d.rotation = _probe.rotation
-	if target == null:
+	if is_instance_valid(target):
+		_probe.set_target(target._probe.position)
 		return
-	_probe.set_target(target._probe.position)
+	set_next_target()
+
+func set_next_target():
+	if !all_targets.empty():
+		var index = randi() % all_targets.size()
+		var next_target = all_targets[index]
+		all_targets.remove(index)
+		if !is_instance_valid(next_target):
+			return
+		target = next_target.owner
+		_probe.set_target(next_target.position)
 
 func _on_body_entered(body: Node):
-	if body.owner != null and body.owner.name == "triangle":
-		target = body.owner
-		_probe.set_target(body.position)
+	if body.owner != null and (body.owner.name == "hunter" or body.owner.name == "triangle"):
+		all_targets.append(body)
 
 func _on_shoot_range_entered():
 	shoot_frequency.start()

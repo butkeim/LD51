@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+onready var polygon_2d: Polygon2D = $Polygon2D
+
 var direction: Vector2
 var speed: float
 var friendly: bool = false
@@ -7,7 +9,8 @@ var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
 
 func _ready():
 	name = "laser"
-	
+	if friendly:
+		polygon_2d.color = Color(0.14, 0.42, 0.79, 0.5)
 
 func _physics_process(delta: float) -> void:
 	rotation = direction.angle() + PI / 2

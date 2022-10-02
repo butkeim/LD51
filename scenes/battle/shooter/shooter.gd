@@ -19,6 +19,7 @@ func shoot_laser_to(battle: Node2D, from: Vector2, to: Vector2, speed: float, pr
 	var projectile = laser.instance()
 	projectile.position = Vector2(from.x + get_shoot_rand(precision), from.y + get_shoot_rand(precision))
 	projectile.speed = speed
+	projectile.friendly = true
 	
 	if friendly:
 		projectile.collision_layer = disable_bit(projectile.collision_layer, 2)
