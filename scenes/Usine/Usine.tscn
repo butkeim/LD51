@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/Usine/GrilleDisplay.tscn" type="PackedScene" id=1]
+
+[node name="Usine" type="Node2D"]
+
+[node name="containerGride" type="CenterContainer" parent="."]
+margin_left = 321.0
+margin_top = 3.0
+margin_right = 861.0
+margin_bottom = 883.0
+
+[node name="GrilleDisplay" parent="containerGride" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_right = 540.0
+margin_bottom = 880.0
+
+[node name="ContainerTapis" type="CenterContainer" parent="."]
+margin_top = 9.0
+margin_right = 414.0
+margin_bottom = 804.0

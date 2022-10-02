@@ -8,6 +8,28 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Grille",
+"language": "GDScript",
+"path": "res://scenes/Usine/Grille.gd"
+}, {
+"base": "Resource",
+"class": "Tapis",
+"language": "GDScript",
+"path": "res://scenes/Usine/tapis.gd"
+}, {
+"base": "Resource",
+"class": "objects",
+"language": "GDScript",
+"path": "res://scenes/Usine/Objects/objects.gd"
+} ]
+_global_script_class_icons={
+"Grille": "",
+"Tapis": "",
+"objects": ""
+}
+
 [application]
 
 config/name="LD 51"
