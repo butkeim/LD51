@@ -35,7 +35,7 @@ margin_right = -656.0
 margin_bottom = -400.0
 
 [node name="Node2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 387, -106 )
+position = Vector2( 384, -128 )
 
 [node name="Floor" type="Node2D" parent="."]
 position = Vector2( -640, -384 )
