@@ -24,6 +24,7 @@ func get_drag_data(_position):
 			var data = {}
 			data.object = item
 			data.object_index = item_index
+			data.origine = "tapis"
 			data.object_texture = item.texture
 			var dragPreview = TextureRect.new()
 			dragged = dragPreview
@@ -33,14 +34,16 @@ func get_drag_data(_position):
 	
 	
 func can_drop_data(_position,data):
-	return data.has("object") #and data.object_texture == null
-	pass
-	
-	#data is Dictionary and
+		return  true
+#return data.has("object") == false#and data.object_texture == null		
+#data is Dictionary and
 	
 func drop_data(_position, data):
+	
 	var my_item_index = get_index()
 	var my_item = Tapis.objects[my_item_index]
-	Tapis.swap_items(my_item_index, data.object_index)
-	Tapis.set_item(my_item_index, data.object)
-	pass
+	if(my_item == null and data.origine == "tapis"):
+		Tapis.swap_items(my_item_index, data.object_index)
+		Tapis.set_item(my_item_index, data.object)
+	else:
+		Tapis.set_item(data.object_index, data.object)

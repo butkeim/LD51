@@ -9,6 +9,11 @@ func _process(delta: float) -> void:
 	if is_instance_valid(dragged):
 		dragged.set_position(get_global_mouse_position())
 
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_LEFT and event.pressed:
+			print(get_index())
+
 func display_item(item):
 	if item is objects:
 		ObjectTextureRect.texture  = item.texture
@@ -25,6 +30,8 @@ func get_drag_data(_position):
 		var data = {}
 		data.object = item
 		data.object_index = item_index
+		data.texture = item.texture
+		data.origine = "grille"
 		var dragPreview = TextureRect.new()
 		dragPreview.texture = item.texture
 		dragged = dragPreview
@@ -33,15 +40,24 @@ func get_drag_data(_position):
 	
 	
 func can_drop_data(_position,data):
-	return  true #data.has("object")
-	pass
+	var my_item_index = get_index()
+	var my_item = grille.objects[my_item_index]
+	if data.origine == "tapis":
+		return(my_item == null)  
+	else:
+		return(true) 
+	
 	
 	#data is Dictionary and
 	
 func drop_data(_position, data):
 	var my_item_index = get_index()
 	var my_item = grille.objects[my_item_index]
-	grille.swap_items(my_item_index, data.object_index)
-	grille.set_item(my_item_index, data.object)
+	if(my_item == null and data.origine == "tapis"):
+		grille.set_item(my_item_index, data.object)
+	elif(data.origine == "grille"):
+		grille.swap_items(my_item_index, data.object_index)
+		grille.set_item(my_item_index, data.object)
+		
 	dragged = null
 	pass

@@ -76,21 +76,21 @@ func get_surronding_till(item_index) -> objects:
 	return tileSurround
 
 func get_speed(TileSurround) -> int:
-	var speed:int = 30
+	var speed:int = 50
 	for tile in TileSurround:
 		if(tile != null and tile.name == "reactor"):
 			speed += 50
 	return speed
 
 func get_range(TileSurround):
-	var weaponrange = 0
+	var weaponrange = 100
 	for tile in TileSurround:
 		if(tile != null and tile.name == "Weapon"):
-			weaponrange += 50
+			weaponrange += 100
 	return(weaponrange)
 
 func get_cadence(TileSurround):
-	var cadence = 1
+	var cadence = 0.5
 	for tile in TileSurround:
 		if(tile != null and tile.name == "Weapon"):
 			cadence -= 0.2
