@@ -3,6 +3,12 @@ extends CenterContainer
 var Tapis = preload("res://scenes/Usine/Tapis/Tapis.tres")
 onready var ObjectTextureRect = $ObjectTextureRect
 
+var dragged: TextureRect = null
+
+func _process(delta: float) -> void:
+	if is_instance_valid(dragged):
+		dragged.set_position(get_global_mouse_position())
+
 func display_item(item):
 	if item is objects:
 		print(item.name)
@@ -19,6 +25,7 @@ func get_drag_data(_position):
 		data.object_index = item_index
 		data.object_texture = item.texture
 		var dragPreview = TextureRect.new()
+		dragged = dragPreview
 		dragPreview.texture = item.texture
 		set_drag_preview(dragPreview)
 		return	data
