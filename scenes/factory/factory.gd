@@ -17,6 +17,6 @@ func _ready():
 #func _process(delta: float) -> void:
 #	pass//scenes/Usine
 
-func DeplaceTapis():
+#func DeplaceTapis():
 #$TapisDisplay
 	
