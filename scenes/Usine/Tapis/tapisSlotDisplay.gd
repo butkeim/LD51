@@ -18,17 +18,18 @@ func display_item(item):
 
 func get_drag_data(_position):
 	var item_index = get_index()
-	var item = Tapis.remove_item(item_index)
-	if	item is objects:
-		var data = {}
-		data.object = item
-		data.object_index = item_index
-		data.object_texture = item.texture
-		var dragPreview = TextureRect.new()
-		dragged = dragPreview
-		dragPreview.texture = item.texture
-		set_drag_preview(dragPreview)
-		return	data
+	if item_index%4 == 3:
+		var item = Tapis.remove_item(item_index)
+		if	item is objects:
+			var data = {}
+			data.object = item
+			data.object_index = item_index
+			data.object_texture = item.texture
+			var dragPreview = TextureRect.new()
+			dragged = dragPreview
+			dragPreview.texture = item.texture
+			set_drag_preview(dragPreview)
+			return	data
 	
 	
 func can_drop_data(_position,data):
