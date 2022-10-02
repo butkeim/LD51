@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/Usine/Grille/GrilleSlotDisplay.gd" type="Script" id=2]
+
+[node name="GrilleSlotDisplay" type="CenterContainer"]
+margin_right = 1312.0
+margin_bottom = 800.0
+script = ExtResource( 2 )
+
+[node name="ObjectTextureRect" type="TextureRect" parent="."]
+margin_left = 656.0
+margin_top = 400.0
+margin_right = 656.0
+margin_bottom = 400.0
+size_flags_horizontal = 0
+size_flags_vertical = 0

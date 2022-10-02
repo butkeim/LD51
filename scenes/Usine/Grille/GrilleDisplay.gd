@@ -1,8 +1,10 @@
 extends GridContainer
 
-var grille = preload("res://scenes/Usine/Grille.tres")
+var grille = preload("res://scenes/Usine/Grille/Grille.tres")
+
 
 func _ready():
+	
 	grille.connect("objects_change",self,"_on_items_changed")
 	update_inventory_display()
 	

@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "Grille",
 "language": "GDScript",
-"path": "res://scenes/Usine/Grille.gd"
+"path": "res://scenes/Usine/Grille/Grille.gd"
 }, {
 "base": "Resource",
 "class": "Tapis",
 "language": "GDScript",
-"path": "res://scenes/Usine/tapis.gd"
+"path": "res://scenes/Usine/Tapis/tapis.gd"
 }, {
 "base": "Resource",
 "class": "objects",
