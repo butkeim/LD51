@@ -5,7 +5,7 @@ export var shooting_range: float = 200.0
 export var shoot_cadence: float = 1.0
 
 onready var _probe: KinematicBody2D = $Probe
-onready var _polygon_2d: Polygon2D = $Polygon2D
+onready var _polygon_2d = $Polygon2D
 onready var area_2d: Area2D = $Polygon2D/Area2D
 onready var shoot_frequency: Timer = $ShootFrequency
 onready var shooter: Node2D = $Shooter
@@ -27,7 +27,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	_polygon_2d.position = _probe.position
-	_polygon_2d.rotation = _probe.rotation
+	_polygon_2d.rotation_degrees = _probe.rotation_degrees - 90
 	if target == null:
 		return
 	_probe.set_target(target._probe.position)
