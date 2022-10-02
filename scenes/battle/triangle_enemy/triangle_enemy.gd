@@ -3,6 +3,7 @@ extends Node2D
 onready var _probe := $Probe
 onready var _shooter: Node2D = $Shooter
 onready var _hitbox: Area2D = $Polygon2D/Area2D
+onready var armor: Node2D = $Armor
 
 var targets = [Vector2(-200, -100), Vector2(-200, 100), Vector2(200, 100), Vector2(200, -100)]
 var current_target_index = 0
@@ -10,9 +11,11 @@ var current_target_index = 0
 func _ready() -> void:
 	name = "triangle"
 	_probe.velocity_factor = 250
+	armor.connect("no_armor", self, "_on_no_armor")
 	_hitbox.connect("body_entered", self, "_on_body_entered")
 	$Timer.connect("timeout", self, "_on_timer_timeout")
 	$TimerShooter.connect("timeout", self, "_on_timer_shooter_timeout")
+	
 	_probe.connect("target_reached", self, "_on_target_reached")
 	_probe.set_target(targets[current_target_index])
 
@@ -39,3 +42,7 @@ func _on_timer_shooter_timeout():
 	
 func _on_body_entered(body: Node):
 	body.delete()
+	armor.take_damage(10)
+	
+func _on_no_armor():
+	queue_free()

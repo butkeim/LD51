@@ -11,6 +11,7 @@ onready var timer_dash: Timer = $TimerDash
 onready var beam: Line2D = $Beam
 onready var kinematic_body_2d: KinematicBody2D = $KinematicBody2D
 onready var area_2_d_2: Area2D = $Polygon2D/Area2D2
+onready var armor: Node2D = $Armor
 
 var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
 
@@ -24,6 +25,7 @@ func _ready() -> void:
 	_probe.connect("target_reached", self ,"_on_target_reached")
 	_probe.connect("shoot_range_entered", self, "_on_shoot_range_entered")
 	area_2d.connect("area_entered", self, "_on_area_entered")
+	armor.connect("no_armor", self, "_on_no_armor")
 	
 	_probe.velocity_factor = 30.0
 	_probe.shoot_range = 70.0
@@ -62,6 +64,10 @@ func _on_shoot_range_entered():
 
 func _on_kinematic_body_2d_entered(body: Node):
 	body.delete()
+	armor.take_damage(10)
+
+func _on_no_armor():
+	queue_free()
 
 func beam_width_effect(delta):
 	if !beam.visible:
