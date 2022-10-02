@@ -23,6 +23,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	cleanup(hunters)
 	cleanup(defenders)
+	cleanup(bombers)
 
 func cleanup(tab):
 	var index_to_remove = []
