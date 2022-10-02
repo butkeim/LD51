@@ -24,9 +24,9 @@ func _process(delta: float) -> void:
 	var direction := position.direction_to(_current_target)
 	var desired_velocity := direction * (velocity_factor / 3)
 	var steering := (desired_velocity - _velocity) * delta * steering_factor
-	
+
 	_velocity += steering
-	_velocity = move_and_slide(_velocity)
+	_velocity = move_and_slide(_velocity * int(position.distance_to(_current_target) > reached_target_distance))
 	rotation = _velocity.angle() + PI / 2
 
 func target_reached_launcher():
