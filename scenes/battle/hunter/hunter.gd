@@ -15,6 +15,7 @@ onready var armor: Node2D = $Armor
 var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
 var dead_explosion = preload("res://scenes/fx/explosion/explosion_ship.tscn")
 
+var all_targets = []
 var target: Node2D
 
 func _ready() -> void:
@@ -36,9 +37,9 @@ func _process(delta: float) -> void:
 	beam_width_effect(delta)
 
 func _physics_process(delta: float) -> void:
-	if target == null:
+	if !is_instance_valid(target):
+		set_next_target()
 		return
-		
 	polygon_2d.position = _probe.position
 	polygon_2d.rotation = _probe.rotation
 	_probe.set_target(target.position)
@@ -79,3 +80,14 @@ func beam_width_effect(delta):
 	beam.width -= beam_schrink_speed * delta
 	if beam.width < 1.0:
 		beam.visible = false
+
+func set_next_target():
+	if all_targets.size() == 0:
+		return
+	var index = randi() % all_targets.size()
+	if is_instance_valid(all_targets[index]):
+		target = all_targets[index]._probe
+		all_targets.remove(index)
+
+func add_available_target(target: Node2D):
+	all_targets.append(target)

@@ -42,13 +42,14 @@ func set_next_target():
 		all_targets.remove(index)
 		if !is_instance_valid(next_target):
 			return
-		target = next_target.owner
+		target = next_target
 		_probe.set_target(next_target.position)
 
 func _on_body_entered(body: Node):
-	if body.owner != null and (body.owner.name == "hunter" or body.owner.name == "triangle"):
-		all_targets.append(body)
-	print(all_targets.size())
+	pass
+	#if body.owner != null and (body.owner.name == "hunter" or body.owner.name == "triangle"):
+		#all_targets.append(body)
+	#print(all_targets.size())
 
 func _on_shoot_range_entered():
 	shoot_frequency.start()
@@ -60,3 +61,6 @@ func _on_shoot_range_exited():
 
 func _on_shoot_frequency_timeout():
 	shooter.shoot_laser_to(owner, _probe.position, _probe._current_target, 15000.0, 6)
+
+func add_new_hunter(hunter: Node2D):
+	all_targets.append(hunter)
