@@ -6,15 +6,19 @@ var defender_scene = preload("res://scenes/battle/defender/defender.tscn")
 
 onready var timer_new_defender: Timer = $TimerNewDefender
 onready var timer_new_hunter: Timer = $TimerNewHunter
+onready var timer_new_bomber: Timer = $TimerNewBomber
 
 var hunter_spaws = [Vector2(-300, 30), Vector2(300, -30), Vector2(30, 300)]
 
 var hunters = []
 var defenders = []
+var bombers = []
 
 func _ready() -> void:
+	randomize()
 	timer_new_defender.connect("timeout", self, "_on_new_defender_timeout")
 	timer_new_hunter.connect("timeout", self, "_on_new_hunter_timeout")
+	timer_new_bomber.connect("timeout", self, "_on_new_bomber_timeout")
 
 func _process(delta: float) -> void:
 	cleanup(hunters)
@@ -56,11 +60,17 @@ func add_hunter(dash_frequency: float):
 	for defender in defenders:
 		defender.all_targets.append(new_hunter)
 	hunters.append(new_hunter)
-	
+
+func add_bomber():
+	var new_bomber = bomber_scene.instance()
+	add_child(new_bomber)
+	bombers.append(new_bomber)
 
 func _on_new_defender_timeout():
-	add_defender(70, 0.8, 200)
+	add_defender(40 + randi() % 120, 0.8, 200)
 	
 func _on_new_hunter_timeout():
-	add_hunter(randf() * 20)
+	add_hunter(randf() * 30)
 
+func _on_new_bomber_timeout():
+	add_bomber()

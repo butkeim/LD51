@@ -10,7 +10,8 @@ script = ExtResource( 3 )
 
 [node name="TimerNewDefender" type="Timer" parent="."]
 wait_time = 3.0
-autostart = true
 
 [node name="TimerNewHunter" type="Timer" parent="."]
 autostart = true
+
+[node name="TimerNewBomber" type="Timer" parent="."]
