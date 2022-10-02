@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/sprites/chasis/chasis_2_64x64.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 578.167
+radius = 91.548
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 5, 10 )
