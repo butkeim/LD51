@@ -44,6 +44,11 @@ func _physics_process(delta: float) -> void:
 	polygon_2d.rotation = _probe.rotation
 	_probe.set_target(target.position)
 
+func set_prob_pos(position: Vector2):
+	_probe.position = position
+	polygon_2d.position = _probe.position
+	polygon_2d.rotation = _probe.rotation
+
 func _on_area_entered(body: Area2D):
 	if !is_instance_valid(target):
 		target = body.owner._probe
