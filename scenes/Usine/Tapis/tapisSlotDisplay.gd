@@ -7,8 +7,8 @@ func display_item(item):
 	if item is objects:
 		print(item.name)
 		ObjectTextureRect.texture  = item.texture
-	#else:
-		#ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/grid.png")
+	else:
+		ObjectTextureRect.texture = null
 
 func get_drag_data(_position):
 	var item_index = get_index()
@@ -25,7 +25,7 @@ func get_drag_data(_position):
 	
 	
 func can_drop_data(_position,data):
-	return data.has("object") and data.object_texture != null
+	return data.has("object") #and data.object_texture == null
 	pass
 	
 	#data is Dictionary and

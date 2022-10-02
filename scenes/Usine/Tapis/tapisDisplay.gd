@@ -13,18 +13,19 @@ func _ready():
 	intialisation()
 	#u#pdate_inventory_display()
 	
-func update_inventory_display():
+func update_Tapis_display():
 	for item_index in Tapis.objects.size():
-		update_grille_slot_display(item_index)
+		update_Tapis_slot_display(item_index)
 	
-func update_grille_slot_display(object_index):
-	var grilleSlotDisplay = get_child(object_index)
+func update_Tapis_slot_display(object_index):
+	var TapisSlotDisplay = get_child(object_index)
 	var item = Tapis.objects[object_index]
-	grilleSlotDisplay.display_item(item)
+	TapisSlotDisplay.display_item(item)
+
 	
 func _on_items_changed(indexes):
 	for item_index in indexes:
-		update_grille_slot_display(item_index)
+		update_Tapis_slot_display(item_index)
 
 func deplacement_tapis():
 	for col in range(3,0,-1):
