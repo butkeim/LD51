@@ -14,6 +14,7 @@ onready var area_2_d_2: Area2D = $Polygon2D/Area2D2
 onready var armor: Node2D = $Armor
 
 var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
+var dead_explosion = preload("res://scenes/fx/explosion/explosion_ship.tscn")
 
 var target: Node2D
 
@@ -67,6 +68,10 @@ func _on_kinematic_body_2d_entered(body: Node):
 	armor.take_damage(10)
 
 func _on_no_armor():
+	var effect = dead_explosion.instance()
+	effect.position = _probe.global_position
+	effect.get_child(0).emitting = true
+	get_tree().root.add_child(effect)
 	queue_free()
 
 func beam_width_effect(delta):
