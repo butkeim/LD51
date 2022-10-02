@@ -27,7 +27,8 @@ func _process(delta: float) -> void:
 
 	_velocity += steering
 	_velocity = move_and_slide(_velocity * int(position.distance_to(_current_target) > reached_target_distance))
-	rotation = _velocity.angle() + PI / 2
+	if position.distance_to(_current_target) > reached_target_distance:
+		rotation = _velocity.angle() + PI / 2
 
 func target_reached_launcher():
 	if position.distance_to(_current_target) < reached_target_distance:
