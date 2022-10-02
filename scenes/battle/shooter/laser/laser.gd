@@ -18,6 +18,7 @@ func _physics_process(delta: float) -> void:
 	
 func delete():
 	var effect = explosion.instance()
+	effect.scale = Vector2(0.5, 0.5)
 	effect.position = global_position
 	effect.get_child(0).emitting = true
 	get_tree().root.add_child(effect)

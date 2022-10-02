@@ -81,6 +81,7 @@ func shoot_beam():
 	target.owner.armor.take_damage(40)
 	var effect = explosion.instance()
 	effect.position = target.global_position
+	effect.scale = Vector2(0.5, 0.5)
 	effect.get_child(0).emitting = true
 	get_tree().root.add_child(effect)
 

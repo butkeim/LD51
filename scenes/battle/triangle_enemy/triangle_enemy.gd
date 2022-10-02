@@ -8,6 +8,8 @@ onready var armor: Node2D = $Armor
 var targets = [Vector2(-200, -100), Vector2(-200, 100), Vector2(200, 100), Vector2(200, -100)]
 var current_target_index = 0
 
+var dead_explosion = preload("res://scenes/fx/explosion/explosion_ship.tscn")
+
 func _ready() -> void:
 	name = "triangle"
 	_probe.velocity_factor = 250
@@ -44,4 +46,9 @@ func _on_body_entered(body: Node):
 	armor.take_damage(10)
 	
 func _on_no_armor():
+	var effect = dead_explosion.instance()
+	effect.position = _probe.global_position
+	effect.get_child(0).emitting = true
+	effect.scale = Vector2(1.3, 1.3)
+	get_tree().root.add_child(effect)
 	queue_free()
