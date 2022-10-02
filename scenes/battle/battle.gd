@@ -55,7 +55,7 @@ func add_hunter(dash_frequency: float):
 	var new_hunter = hunter_scene.instance()
 	new_hunter.dash_frequency = dash_frequency
 	add_child(new_hunter)
-	new_hunter._probe.position = hunter_spaws[randi() % hunter_spaws.size()]
+	new_hunter._probe.position = Vector2(300, 0).rotated(deg2rad(rand_range(0, 360)))
 	new_hunter.set_owner(self)
 	
 	new_hunter.all_targets.append_array(defenders)
