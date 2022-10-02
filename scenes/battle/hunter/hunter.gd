@@ -11,6 +11,7 @@ onready var timer_dash: Timer = $TimerDash
 onready var beam: Line2D = $Beam
 onready var area_2_d_2: Area2D = $Polygon2D/Area2D2
 onready var armor: Node2D = $Armor
+onready var timer_beam: Timer = $TimerBeam
 
 var explosion = preload("res://scenes/fx/explosion/explosion.tscn")
 var dead_explosion = preload("res://scenes/fx/explosion/explosion_ship.tscn")
@@ -23,8 +24,10 @@ func _ready() -> void:
 	name = "hunter"
 	area_2_d_2.connect("body_entered", self, "_on_kinematic_body_2d_entered")
 	timer_dash.connect("timeout", self, "_on_timerdash_timeout")
+	timer_beam.connect("timeout", self, "_on_timerbeam_timeout")
 	_probe.connect("target_reached", self ,"_on_target_reached")
 	_probe.connect("shoot_range_entered", self, "_on_shoot_range_entered")
+	_probe.connect("shoot_range_exited", self, "_on_shoot_range_exited")
 	area_2d.connect("area_entered", self, "_on_area_entered")
 	armor.connect("no_armor", self, "_on_no_armor")
 	
@@ -60,6 +63,16 @@ func _on_target_reached():
 	_probe.velocity_factor = 10.0
 	
 func _on_shoot_range_entered():
+	shoot_beam()
+	timer_beam.start()
+
+func _on_shoot_range_exited():
+	timer_beam.stop()
+
+func _on_timerbeam_timeout():
+	shoot_beam()
+
+func shoot_beam():
 	if !is_instance_valid(target):
 		return
 	beam.points = [_probe.position, target.position]
