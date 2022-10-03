@@ -6,12 +6,16 @@ onready var ObjectTextureRect = $ObjectTextureRect
 var MouseOver = false
 
 var dragged: TextureRect = null
+
+func _ready():
+	self.connect("mouse_entered",self,"_on_mouse_entered")
+	self.connect("mouse_exited",self,"_on_mouse_exit")
+	
 func _process(delta: float) -> void:
 	ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
 	if is_instance_valid(dragged):
 		dragged.set_position(get_global_mouse_position())
-	self.connect("mouse_entered",self,"_on_mouse_entered")
-	self.connect("mouse_exited",self,"_on_mouse_exit")
+
 
 func _input(event):
 	if event is InputEventMouseButton and event.is_pressed() and MouseOver:
