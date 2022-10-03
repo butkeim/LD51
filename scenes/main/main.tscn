@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/main/main.gd" type="Script" id=1]
 [ext_resource path="res://scenes/ui/ui.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/sprites/factory/factory_tapis/tapis.tscn" type="PackedScene" id=4]
 [ext_resource path="res://trash/Node2D.tscn" type="PackedScene" id=5]
 [ext_resource path="res://ressources/sounds/LDJam51.mp3" type="AudioStream" id=6]
+[ext_resource path="res://assets/sprites/factory/factory_tile/grid.png" type="Texture" id=7]
 [ext_resource path="res://scenes/Usine/Usine.tscn" type="PackedScene" id=9]
 
 [node name="Main" type="Node2D"]
@@ -44,486 +45,752 @@ position = Vector2( -640, -384 )
 [node name="AnimatedSpriteTapis" parent="Floor" instance=ExtResource( 4 )]
 light_mask = 0
 position = Vector2( 16, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis2" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis3" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis4" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis5" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis6" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis7" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis8" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis9" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis10" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 32 )
-frame = 1
 
 [node name="AnimatedSpriteTapis11" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis12" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis13" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis14" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis15" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis16" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis17" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis18" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis19" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis20" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 96 )
-frame = 1
 
 [node name="AnimatedSpriteTapis21" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis22" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis23" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis24" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis25" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis26" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis27" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis28" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis29" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis30" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 160 )
-frame = 1
 
 [node name="AnimatedSpriteTapis31" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis32" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis33" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis34" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis35" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis36" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis37" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis38" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis39" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis40" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 224 )
-frame = 1
 
 [node name="AnimatedSpriteTapis41" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis42" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis43" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis44" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis45" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis46" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis47" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis48" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis49" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis50" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 288 )
-frame = 1
 
 [node name="AnimatedSpriteTapis51" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis52" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis53" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis54" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis55" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis56" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis57" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis58" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis59" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis60" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 352 )
-frame = 1
 
 [node name="AnimatedSpriteTapis61" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis62" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis63" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis64" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis65" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis66" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis67" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis68" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis69" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis70" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 416 )
-frame = 1
 
 [node name="AnimatedSpriteTapis71" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis72" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis73" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis74" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis75" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis76" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis77" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis78" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis79" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis80" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 480 )
-frame = 1
 
 [node name="AnimatedSpriteTapis81" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis82" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis83" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis84" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis85" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis86" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis87" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis88" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis89" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis90" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 544 )
-frame = 1
 
 [node name="AnimatedSpriteTapis91" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis92" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis93" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis94" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis95" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis96" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis97" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis98" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis99" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis100" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 608 )
-frame = 1
 
 [node name="AnimatedSpriteTapis101" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis102" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis103" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis104" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis105" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis106" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis107" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis108" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis109" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis110" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 672 )
-frame = 1
 
 [node name="AnimatedSpriteTapis111" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 16, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis112" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 48, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis113" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 80, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis114" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 112, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis115" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 144, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis116" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 176, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis117" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis118" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis119" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 208, 736 )
-frame = 1
 
 [node name="AnimatedSpriteTapis120" parent="Floor" instance=ExtResource( 4 )]
 position = Vector2( 240, 736 )
-frame = 1
+
+[node name="FactoryGrid" type="Node2D" parent="."]
+
+[node name="Grid" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid2" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid3" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid4" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid5" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid6" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid7" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid8" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, -352 )
+texture = ExtResource( 7 )
+
+[node name="Grid9" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid10" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid11" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid12" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid13" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid14" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid15" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid16" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, -288 )
+texture = ExtResource( 7 )
+
+[node name="Grid17" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid18" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid19" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid20" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid21" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid22" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid23" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid24" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, -224 )
+texture = ExtResource( 7 )
+
+[node name="Grid25" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid26" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid27" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid28" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid29" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid30" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid31" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid32" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, -160 )
+texture = ExtResource( 7 )
+
+[node name="Grid33" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid34" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid35" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid36" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid37" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid38" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid39" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid40" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, -96 )
+texture = ExtResource( 7 )
+
+[node name="Grid41" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid42" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid43" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid44" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid45" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid46" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid47" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid48" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, -32 )
+texture = ExtResource( 7 )
+
+[node name="Grid49" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid50" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid51" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid52" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid53" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid54" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid55" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid56" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, 32 )
+texture = ExtResource( 7 )
+
+[node name="Grid57" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid58" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid59" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid60" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid61" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid62" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid63" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid64" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, 96 )
+texture = ExtResource( 7 )
+
+[node name="Grid65" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid66" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid67" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid68" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid69" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid70" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid71" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid72" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, 160 )
+texture = ExtResource( 7 )
+
+[node name="Grid73" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid74" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid75" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid76" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid77" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid78" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid79" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid80" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, 224 )
+texture = ExtResource( 7 )
+
+[node name="Grid81" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid82" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid83" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid84" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid85" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid86" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid87" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid88" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, 288 )
+texture = ExtResource( 7 )
+
+[node name="Grid89" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -352, 352 )
+texture = ExtResource( 7 )
+
+[node name="Grid90" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -288, 352 )
+texture = ExtResource( 7 )
+
+[node name="Grid91" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -224, 352 )
+texture = ExtResource( 7 )
+
+[node name="Grid92" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -160, 352 )
+texture = ExtResource( 7 )
+
+[node name="Grid93" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -96, 352 )
+texture = ExtResource( 7 )
+
+[node name="Grid94" type="Sprite" parent="FactoryGrid"]
+position = Vector2( -32, 352 )
+texture = ExtResource( 7 )
+
+[node name="Grid95" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 32, 352 )
+texture = ExtResource( 7 )
+
+[node name="Grid96" type="Sprite" parent="FactoryGrid"]
+position = Vector2( 96, 352 )
+texture = ExtResource( 7 )
 
 [node name="Usine" parent="." instance=ExtResource( 9 )]
-position = Vector2( -718, -443 )
+position = Vector2( -744, -440 )
 
 [node name="MultiMeshInstance2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( 128, -394 )
