@@ -7,4 +7,5 @@
 script = ExtResource( 1 )
 name = "Weapon"
 description = "ncrease the fire rate and range of the ship"
+rotation = 0
 texture = ExtResource( 2 )

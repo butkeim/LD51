@@ -18,16 +18,23 @@ func _process(delta: float) -> void:
 
 
 func _input(event):
-	if event is InputEventMouseButton and event.is_pressed() and MouseOver:
+	if event is InputEventMouseButton and event.doubleclick and MouseOver:
 		var item_index = get_index()
-		ObjectTextureRect.rect_rotation = ObjectTextureRect.rect_rotation + 90
-		print(item_index)
+		var item = grille.get_item(item_index)
+		if item != null:
+			item.rotation = item.rotation + 90 
+			if item.rotation > 271:
+				item.rotation = 0
+			ObjectTextureRect.rect_rotation = item.rotation#ObjectTextureRect.rect_rotation + 90
 
 func _on_mouse_entered():
 	var item_index = get_index()
 	var item = grille.get_item(item_index)#,item_index)
 	if item is objects:
-		ObjectTextureRect.texture  = item.texture
+		pass
+		#ObjectTextureRect.rect_rotation = item.rotation
+		#ObjectTextureRect.texture  = item.texture
+		#ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
 	else:
 		ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/Grid_Motor.png")
 	MouseOver = true
@@ -40,18 +47,23 @@ func _on_mouse_exit():
 	var item_index = get_index()
 	var item = grille.get_item(item_index)
 	if item is objects:
+		ObjectTextureRect.rect_rotation = item.rotation
 		ObjectTextureRect.texture  = item.texture
+		ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
 	else:
 		ObjectTextureRect.texture = load("res://assets/sprites/ui/transparent.png")
 
 
-#if event.button_index == BUTTON_LEFT and event.pressed:
-		
 func display_item(item):
 	if item is objects:
 		ObjectTextureRect.texture  = item.texture
+		ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
+		ObjectTextureRect.rect_rotation = item.rotation
+		
 	else:
 		ObjectTextureRect.texture = load("res://assets/sprites/ui/transparent.png")
+		ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
+		#ObjectTextureRect.rect_rotation = 0
 		
 func get_drag_data(_position):
 	var item_index = get_index()
@@ -63,6 +75,8 @@ func get_drag_data(_position):
 		data.texture = item.texture
 		data.origine = "grille"
 		var dragPreview = TextureRect.new()
+		dragPreview.rect_pivot_offset = Vector2(32,32)
+		dragPreview.rect_rotation = item.rotation
 		dragPreview.texture = item.texture
 		dragged = dragPreview
 		set_drag_preview(dragPreview)
