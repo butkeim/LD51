@@ -17,9 +17,11 @@ func _on_mouse_entered():
 	#if item is objects:
 	#	ObjectTextureRect.texture  = item.texture
 	#else:
-	ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/Grid_Reactor.png")
+	#ObjectTextureRect.texture = load("res://assets/sprites/ui/transparent.png")
+	ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/Grid_Motor.png")
 	MouseOver = true
-	
+	#if item != null:
+	#	emit_signal("_send_item_info",item.Description)
 	
 	
 func _on_mouse_exit():
@@ -29,7 +31,7 @@ func _on_mouse_exit():
 	if item is objects:
 		ObjectTextureRect.texture  = item.texture
 	else:
-		ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/grid.png")
+		ObjectTextureRect.texture = load("res://assets/sprites/ui/transparent.png")
 
 func _input(event):
 	if event is InputEventMouseButton and event.is_pressed() and MouseOver:
@@ -41,7 +43,7 @@ func display_item(item):
 	if item is objects:
 		ObjectTextureRect.texture  = item.texture
 	else:
-		ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/grid.png")
+		ObjectTextureRect.texture = load("res://assets/sprites/ui/transparent.png")
 		
 func get_drag_data(_position):
 	var item_index = get_index()

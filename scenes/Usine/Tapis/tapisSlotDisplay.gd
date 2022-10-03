@@ -9,6 +9,27 @@ func _process(delta: float) -> void:
 	if is_instance_valid(dragged):
 		dragged.set_position(get_global_mouse_position())
 
+func _on_mouse_entered():
+	var item_index = get_index()
+	var item = Tapis.get_item(item_index)#,item_index)
+	#if item is objects:
+	#	ObjectTextureRect.texture  = item.texture
+	#else:
+	ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/Grid_Reactor.png")
+	if item != null:
+		emit_signal("_send_item_info",item.Description)
+	
+	
+func _on_mouse_exit():
+	var item_index = get_index()
+	var item = Tapis.get_item(item_index)
+	if item is objects:
+		ObjectTextureRect.texture  = item.texture
+	else:
+		ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/grid.png")
+
+
+
 func display_item(item):
 	if item is objects:
 		print(item.name)

@@ -9,19 +9,20 @@
 script = ExtResource( 4 )
 
 [node name="containerGride" type="CenterContainer" parent="."]
-margin_left = 341.0
-margin_top = 52.0
-margin_right = 800.0
-margin_bottom = 826.0
-rect_scale = Vector2( 0.973673, 1.00744 )
+margin_left = 360.0
+margin_top = 57.0
+margin_right = 872.0
+margin_bottom = 825.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="GrilleDisplay" parent="containerGride" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 197.0
-margin_top = 355.0
-margin_right = 261.0
-margin_bottom = 419.0
+margin_left = 224.0
+margin_top = 352.0
+margin_right = 288.0
+margin_bottom = 416.0
 
 [node name="Timer" type="Timer" parent="containerGride/GrilleDisplay"]
 wait_time = 10.0
