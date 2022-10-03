@@ -60,7 +60,6 @@ func can_drop_data(_position,data):
 #data is Dictionary and
 	
 func drop_data(_position, data):
-	
 	var my_item_index = get_index()
 	var my_item = Tapis.objects[my_item_index]
 	if(my_item == null and data.origine == "tapis"):

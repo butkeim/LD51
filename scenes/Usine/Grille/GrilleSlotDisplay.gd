@@ -1,6 +1,7 @@
 extends CenterContainer
 
 var grille = preload("res://scenes/Usine/Grille/Grille.tres")
+var Tapis = preload("res://scenes/Usine/Tapis/Tapis.tres")
 onready var ObjectTextureRect = $ObjectTextureRect
 var MouseOver = false
 
