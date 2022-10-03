@@ -33,8 +33,9 @@ func _on_mouse_exit():
 
 func display_item(item):
 	if item is objects:
-		print(item.name)
 		ObjectTextureRect.texture  = item.texture
+		ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
+		ObjectTextureRect.rect_rotation = item.rotation
 	else:
 		ObjectTextureRect.texture = null
 
