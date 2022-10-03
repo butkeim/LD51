@@ -15,18 +15,18 @@ func _process(delta: float) -> void:
 	ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
 	if is_instance_valid(dragged):
 		var mouse_pos = get_global_mouse_position()
-		dragged.set_position(Vector2(mouse_pos.x - 1000, mouse_pos.y - 32))
+		dragged.set_position(Vector2(mouse_pos.x - 32, mouse_pos.y - 32))
 
 
 func _input(event):
 	if event is InputEventMouseButton and event.doubleclick and MouseOver:
 		var item_index = get_index()
 		var item = grille.get_item(item_index)
-		if item != null:
-			item.rotation = item.rotation + 90 
-			if item.rotation > 271:
-				item.rotation = 0
-			ObjectTextureRect.rect_rotation = item.rotation#ObjectTextureRect.rect_rotation + 90
+		#if item != null:
+			#item.rotation = item.rotation + 90 
+			#if item.rotation > 271:
+			#	item.rotation = 0
+			#ObjectTextureRect.rect_rotation = item.rotation#ObjectTextureRect.rect_rotation + 90
 
 func _on_mouse_entered():
 	var item_index = get_index()

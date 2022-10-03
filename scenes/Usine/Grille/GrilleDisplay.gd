@@ -62,13 +62,11 @@ func get_surronding_till(item_index) -> objects:
 	
 	if (item_index % 8 != 0 ):
 		 tileLeft = grille.objects[item_index - 1]
-		 grille.objects[item_index - 1] = null
 	else:
 		 tileLeft = null
 
 	if (item_index % 8 != 7 ):
 		 tileRight = grille.objects[item_index + 1]
-		 grille.objects[item_index + 1] = null
 	else:
 		 tileRight = null
 		
