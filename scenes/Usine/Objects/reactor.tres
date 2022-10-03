@@ -6,4 +6,5 @@
 [resource]
 script = ExtResource( 1 )
 name = "reactor"
+description = ""
 texture = ExtResource( 2 )

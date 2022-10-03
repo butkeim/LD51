@@ -6,4 +6,5 @@
 [resource]
 script = ExtResource( 1 )
 name = "Chassie"
+description = ""
 texture = ExtResource( 2 )

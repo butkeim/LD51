@@ -3,6 +3,9 @@ class_name Grille
 
 signal objects_change(indexes)
 
+func _process(delta: float) -> void:
+	self.connect("mouse_entered",self,"_on_mouse_entered")
+
 export(Array, Resource) var objects = [
 	null, null ,null, null ,null, null, null, null,
 	null, null ,null, null ,null, null, null, null,
@@ -39,3 +42,8 @@ func remove_item(item_index):
 	emit_signal("objects_change",[item_index])
 	return PreviousItem
 	pass
+	
+func get_item(item_index):
+	var currentItem = objects[item_index]
+	return currentItem
+	
