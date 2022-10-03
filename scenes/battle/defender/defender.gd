@@ -25,7 +25,7 @@ func _ready() -> void:
 	armor.connect("no_armor", self, "_on_no_armor")
 	shoot_frequency.connect("timeout", self, "_on_shoot_frequency_timeout")
 	area_2d.connect("body_entered", self, "_on_body_entered")
-	shoot_frequency.wait_time = shoot_cadence
+	shoot_frequency.wait_time = max(0.2, shoot_cadence)
 	_probe.connect("shoot_range_entered", self, "_on_shoot_range_entered")
 	_probe.connect("shoot_range_exited", self, "_on_shoot_range_exited")
 	_probe.velocity_factor = velocity_factor

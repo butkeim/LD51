@@ -90,6 +90,9 @@ func get_average_armor():
 
 func get_enemies_total_armor():
 	return get_total_armor_of(bombers) + get_total_armor_of(hunters)
+	
+func get_base_armor():
+	return $Base.armor.state
 
 func get_total_armor_of(array):
 	cleanup(hunters)

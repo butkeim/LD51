@@ -7,6 +7,7 @@ signal timer_tapis
 
 
 # Called when the node enters the scene tree for the first time.
+onready var timer: Timer = $Timer
 
 func _ready():
 	$Timer.connect("timeout",self,"DeplaceTapis")

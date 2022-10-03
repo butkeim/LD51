@@ -78,7 +78,7 @@ func shoot_beam():
 	beam.points = [_probe.position, target.position]
 	beam.visible = true
 	beam.width = beam_width
-	target.owner.armor.take_damage(40)
+	target.owner.armor.take_damage(20)
 	var effect = explosion.instance()
 	effect.position = target.global_position
 	effect.scale = Vector2(0.5, 0.5)
