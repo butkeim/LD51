@@ -7,7 +7,8 @@ var dragged: TextureRect = null
 
 func _process(delta: float) -> void:
 	if is_instance_valid(dragged):
-		dragged.set_position(get_global_mouse_position())
+		var mouse_pos = get_global_mouse_position()
+		dragged.set_position(Vector2(mouse_pos.x - 32, mouse_pos.y - 32))
 
 func _on_mouse_entered():
 	var item_index = get_index()

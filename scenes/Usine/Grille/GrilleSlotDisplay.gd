@@ -14,7 +14,8 @@ func _ready():
 func _process(delta: float) -> void:
 	ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
 	if is_instance_valid(dragged):
-		dragged.set_position(get_global_mouse_position())
+		var mouse_pos = get_global_mouse_position()
+		dragged.set_position(Vector2(mouse_pos.x - 1000, mouse_pos.y - 32))
 
 
 func _input(event):

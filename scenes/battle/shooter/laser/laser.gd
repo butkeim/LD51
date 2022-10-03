@@ -16,8 +16,8 @@ func _ready():
 
 func _process(delta: float) -> void:
 	counter_free += delta
-	if counter_free > 3:
-		queue_free()
+	#if counter_free > 3:
+		#queue_free()
 
 func _physics_process(delta: float) -> void:
 	rotation = direction.angle() + PI / 2
