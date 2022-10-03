@@ -7,19 +7,25 @@ var MouseOver = false
 
 var dragged: TextureRect = null
 func _process(delta: float) -> void:
+	ObjectTextureRect.rect_pivot_offset = Vector2(32,32)
 	if is_instance_valid(dragged):
 		dragged.set_position(get_global_mouse_position())
 	self.connect("mouse_entered",self,"_on_mouse_entered")
 	self.connect("mouse_exited",self,"_on_mouse_exit")
 
+func _input(event):
+	if event is InputEventMouseButton and event.is_pressed() and MouseOver:
+		var item_index = get_index()
+		ObjectTextureRect.rect_rotation = ObjectTextureRect.rect_rotation + 90
+		print(item_index)
+
 func _on_mouse_entered():
 	var item_index = get_index()
 	var item = grille.get_item(item_index)#,item_index)
-	#if item is objects:
-	#	ObjectTextureRect.texture  = item.texture
-	#else:
-	#ObjectTextureRect.texture = load("res://assets/sprites/ui/transparent.png")
-	ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/Grid_Motor.png")
+	if item is objects:
+		ObjectTextureRect.texture  = item.texture
+	else:
+		ObjectTextureRect.texture = load("res://assets/sprites/factory/factory_tile/Grid_Motor.png")
 	MouseOver = true
 	#if item != null:
 	#	emit_signal("_send_item_info",item.Description)
@@ -34,10 +40,7 @@ func _on_mouse_exit():
 	else:
 		ObjectTextureRect.texture = load("res://assets/sprites/ui/transparent.png")
 
-func _input(event):
-	if event is InputEventMouseButton and event.is_pressed() and MouseOver:
-		var item_index = get_index()
-		print(item_index)
+
 #if event.button_index == BUTTON_LEFT and event.pressed:
 		
 func display_item(item):
